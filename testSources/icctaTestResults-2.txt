@@ -1,0 +1,206 @@
+[IccTA]/home/claudio/timo/droid-Security-Thesis/benchmarking/../apksToTest/ApplicationLifecycle3.apk, /home/claudio/timo/droid-Security-Thesis/benchmarking/../tools/iccTA/android-platforms/android-18/android.jar
+[IccTA]ICC Provider is ic3
+add ipc methods!
+add <android.content.Context: void startActivityForResult(android.content.Intent,int)>
+add <android.content.Context: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>
+add <android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>
+add <android.content.Context: void startActivityIfNeeded(android.content.Intent,int,android.os.Bundle)>
+add <android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>
+add <android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>
+add <android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>
+add <android.content.Context: void sendOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)>
+add <android.content.Context: void sendBroadcast(android.content.Intent)>
+add <android.content.Context: android.content.ComponentName startService(android.content.Intent)>
+add <android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>
+add <android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>
+add <android.content.Context: void sendStickyBroadcast(android.content.Intent)>
+add <android.content.Context: void startActivity(android.content.Intent)>
+add <android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>
+add <android.content.Context: void startActivityFromFragment(android.app.Fragment,android.content.Intent,int,android.os.Bundle)>
+add <android.content.Context: void sendBroadcastAsUser(android.content.Intent,android.os.UserHandle)>
+add <android.content.Context: void sendStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)>
+add <android.content.Context: void startActivityFromFragment(android.app.Fragment,android.content.Intent,int)>
+add <android.content.Context: void startActivityFromChild(android.app.Activity,android.content.Intent,int,android.os.Bundle)>
+add <android.content.Context: void startActivityIfNeeded(android.content.Intent,int)>
+add <android.content.Context: void sendStickyOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)>
+add <android.content.Context: void sendBroadcastAsUser(android.content.Intent,android.os.UserHandle,java.lang.String)>
+add <android.content.Context: void startActivities(android.content.Intent[],android.os.Bundle)>
+add <android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>
+add <android.content.Context: void startActivities(android.content.Intent[])>
+add <android.content.Context: void sendStickyOrderedBroadcast(android.content.Intent,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)>
+add <android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)>
+add <android.content.Context: void startActivityFromChild(android.app.Activity,android.content.Intent,int)>
+add <android.content.Context: void startActivity(android.content.Intent,android.os.Bundle)>
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Callback analysis done.
+Warning: RelativeLayout is a phantom class!
+Warning: de.ecspride.applicationlifecycle3.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: de.ecspride.applicationlifecycle3.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/activity_main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 9 callback methods for 3 components
+Found {res/layout/activity_main.xml=[-1 - android.widget.RelativeLayout, -1 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 2276 sources, 1767 sinks, and 9 callback methods.
+Running data flow analysis...
+Running data flow analysis on /home/claudio/timo/droid-Security-Thesis/benchmarking/../apksToTest/ApplicationLifecycle3.apk with 2276 sources and 1767 sinks...
+Starting infoflow computation...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+    public void <init>()
+    {
+        de.ecspride.MainActivity $r0;
+
+        $r0 := @this: de.ecspride.MainActivity;
+
+        specialinvoke $r0.<android.app.Activity: void <init>()>();
+
+        return;
+    }
+
+    protected void onCreate(android.os.Bundle)
+    {
+        de.ecspride.MainActivity $r0;
+        android.os.Bundle $r1;
+
+        $r0 := @this: de.ecspride.MainActivity;
+
+        $r1 := @parameter0: android.os.Bundle;
+
+        specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1);
+
+        virtualinvoke $r0.<de.ecspride.MainActivity: void setContentView(int)>(2130903040);
+
+        return;
+    }
+
+    public boolean onCreateOptionsMenu(android.view.Menu)
+    {
+        de.ecspride.MainActivity $r0;
+        android.view.Menu $r1;
+        android.view.MenuInflater $r2;
+
+        $r0 := @this: de.ecspride.MainActivity;
+
+        $r1 := @parameter0: android.view.Menu;
+
+        $r2 = virtualinvoke $r0.<de.ecspride.MainActivity: android.view.MenuInflater getMenuInflater()>();
+
+        virtualinvoke $r2.<android.view.MenuInflater: void inflate(int,android.view.Menu)>(2131165184, $r1);
+
+        return 1;
+    }
+
+In step Beginning, The number of Jimple line is 36424
+In step Beginning, The number of Jimple method is 10902
+In step Beginning, The number of Jimple class is 785
+In step Beginning, The number of Jimple component is 7
+
+Application classes:
+de.ecspride.ContentProvider
+android.transition.TransitionManager
+android.transition.Scene
+android.transition.Transition
+android.transition.TransitionValues
+android.transition.Transition$TransitionListener
+android.transition.Transition$EpicenterCallback
+android.transition.PathMotion
+android.transition.TransitionPropagation
+de.ecspride.ApplicationLifecyle3
+de.ecspride.MainActivity
+de.ecspride.applicationlifecycle3.BuildConfig
+de.ecspride.applicationlifecycle3.R$attr
+de.ecspride.applicationlifecycle3.R
+de.ecspride.applicationlifecycle3.R$dimen
+de.ecspride.applicationlifecycle3.R$drawable
+de.ecspride.applicationlifecycle3.R$id
+de.ecspride.applicationlifecycle3.R$layout
+de.ecspride.applicationlifecycle3.R$menu
+de.ecspride.applicationlifecycle3.R$string
+de.ecspride.applicationlifecycle3.R$style
+dummyMainClass
+SharedPreferencesHelper
+select distinct d.method, d.instruction, d.exit_kind, f.class from Applications a, Classes b, Components c, ExitPoints d, Applications e, Classes f, Components g, ProviderLinks h where a.id=b.app_id and b.id=c.class_id and b.id=d.class_id and e.id=f.app_id and f.id=g.class_id and c.id=h.src_component_id and g.id=h.dest_component_id and d.exit_kind='p' and a.app in (?) and e.app in (?);
+    public void <init>()
+    {
+        de.ecspride.MainActivity $r0;
+
+        $r0 := @this: de.ecspride.MainActivity;
+
+        specialinvoke $r0.<android.app.Activity: void <init>()>();
+
+        return;
+    }
+
+    protected void onCreate(android.os.Bundle)
+    {
+        de.ecspride.MainActivity $r0;
+        android.os.Bundle $r1;
+
+        $r0 := @this: de.ecspride.MainActivity;
+
+        $r1 := @parameter0: android.os.Bundle;
+
+        specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1);
+
+        virtualinvoke $r0.<de.ecspride.MainActivity: void setContentView(int)>(2130903040);
+
+        return;
+    }
+
+    public boolean onCreateOptionsMenu(android.view.Menu)
+    {
+        de.ecspride.MainActivity $r0;
+        android.view.Menu $r1;
+        android.view.MenuInflater $r2;
+
+        $r0 := @this: de.ecspride.MainActivity;
+
+        $r1 := @parameter0: android.view.Menu;
+
+        $r2 = virtualinvoke $r0.<de.ecspride.MainActivity: android.view.MenuInflater getMenuInflater()>();
+
+        virtualinvoke $r2.<android.view.MenuInflater: void inflate(int,android.view.Menu)>(2131165184, $r1);
+
+        return 1;
+    }
+
+In step Ending, The number of Jimple line is 36424
+In step Ending, The number of Jimple method is 10902
+In step Ending, The number of Jimple class is 786
+In step Ending, The number of Jimple component is 7
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+Found a flow to sink virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+49 1234", null, $r1, null, null) on line 27, from the following sources:
+	- $r1 = virtualinvoke $r0.<de.ecspride.ContentProvider: android.content.Context getContext()>() (in <de.ecspride.ContentProvider: boolean onCreate()>)
+		on Path [$r1 = virtualinvoke $r0.<de.ecspride.ContentProvider: android.content.Context getContext()>(), $r2 = virtualinvoke $r1.<android.content.Context: java.lang.Object getSystemService(java.lang.String)>("phone"), $r3 = (android.telephony.TelephonyManager) $r2, $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>(), <de.ecspride.ApplicationLifecyle3: java.lang.String imei> = $r4, virtualinvoke $r2.<de.ecspride.ApplicationLifecyle3: void onCreate()>(), $r1 = <de.ecspride.ApplicationLifecyle3: java.lang.String imei>, virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+49 1234", null, $r1, null, null)]
+	- $r2 = staticinvoke <android.telephony.SmsManager: android.telephony.SmsManager getDefault()>() (in <de.ecspride.ApplicationLifecyle3: void onCreate()>)
+		on Path [$r2 = staticinvoke <android.telephony.SmsManager: android.telephony.SmsManager getDefault()>(), virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+49 1234", null, $r1, null, null)]
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <de.ecspride.ContentProvider: boolean onCreate()>)
+		on Path [$r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>(), <de.ecspride.ApplicationLifecyle3: java.lang.String imei> = $r4, virtualinvoke $r2.<de.ecspride.ApplicationLifecyle3: void onCreate()>(), $r1 = <de.ecspride.ApplicationLifecyle3: java.lang.String imei>, virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+49 1234", null, $r1, null, null)]
+Maximum memory consumption: 288.667552 MB
+Analysis has run for 28.289990117 seconds
