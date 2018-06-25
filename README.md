@@ -6,4 +6,7 @@ paper
 *Idea: Benchmarking Android Data Leak Detection Tools (Claudio Corrodi, Timo 
 Spring, Mohammad Ghafari, and Oscar Nierstrasz)*
 
-We are in the process of preparing related data and will make it available here in time for the event.
+June 25: The basic implementation is in this branch (essos), however, we are 
+in the process of updating several parts and making it easier to configure and 
+set up the benchmark. More will follow in the upcoming days and weeks and will 
+eventually be merged into the master branch.
